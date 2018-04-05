@@ -34,7 +34,8 @@
 # same conditions as regards security.
 #
 # The fact that you are presently reading this means that you have had
-# knowledge of the CeCILL|CeCILL-B|CeCILL-C 
+# knowledge of the CeCILL
+# 
 # Please respect functions signature for them to work properly with the other classes feature(signal, [arg_opt1,
 # arg_opt2, arg_opt3, ...])
 
