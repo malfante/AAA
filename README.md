@@ -1,2 +1,0 @@
-# AAA
-Automatic Analysis Architecture. 
