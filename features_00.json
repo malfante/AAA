@@ -1,0 +1,162 @@
+{
+	"00":{
+		"ref": "sk_",
+		"function": "skewness_",
+		"function_opt_arg": "{}"
+	},
+	"01":{
+		"ref": "kur_",
+		"function": "kurtosis_",
+		"function_opt_arg": "{}"
+	},
+	"05":{
+		"ref": "Emax",
+		"function": "energy_maximum",
+		"function_opt_arg": "{}"
+	},
+	"06":{
+		"ref": "AE",
+		"function": "average_energy",
+		"function_opt_arg": "{}"
+	},
+	"07":{
+		"ref": "sk",
+		"function": "skewness",
+		"function_opt_arg": "{}"
+	},
+	"08":{
+		"ref": "kur",
+		"function": "kurtosis",
+		"function_opt_arg": "{}"
+	},
+	"09":{
+		"ref": "Estd",
+		"function": "energy_std",
+		"function_opt_arg": "{}"
+	},
+	"10":{
+		"ref": "Esk",
+		"function": "energy_skewness",
+		"function_opt_arg": "{}"
+	},
+	"11":{
+		"ref": "Ekur",
+		"function": "energy_kurtosis",
+		"function_opt_arg": "{}"
+	},
+	"12":{
+		"ref": "RoA",
+		"function": "rate_attack",
+		"function_opt_arg": "{}"
+	},
+	"13":{
+		"ref": "RoD",
+		"function": "rate_decay",
+		"function_opt_arg": "{}"
+	},
+	"14":{
+		"ref": "Shan-5",
+		"function": "shannon",
+		"function_opt_arg": "{'n_bin': 5}"
+	},
+	"15":{
+		"ref": "Shan-30",
+		"function": "shannon",
+		"function_opt_arg": "{'n_bin': 30}"
+	},
+	"16":{
+		"ref": "Shan-500",
+		"function": "shannon",
+		"function_opt_arg": "{'n_bin': 500}"
+	},
+	"17":{
+		"ref": "Ren-5.2",
+		"function": "renyi",
+		"function_opt_arg": "{'n_bin': 5, 'alpha': 2}"
+	},
+	"18":{
+		"ref": "Ren-30.2",
+		"function": "renyi",
+		"function_opt_arg": "{'n_bin': 30, 'alpha': 2}"
+	},
+	"19":{
+		"ref": "Ren-500.2",
+		"function": "renyi",
+		"function_opt_arg": "{'n_bin': 500, 'alpha': 2}"
+	},
+	"20":{
+		"ref": "Ren-5.i",
+		"function": "renyi",
+		"function_opt_arg": "{'n_bin': 5, 'alpha': inf}"
+	},
+	"21":{
+		"ref": "Ren-30.i",
+		"function": "renyi",
+		"function_opt_arg": "{'n_bin': 30, 'alpha': inf}"
+	},
+	"22":{
+		"ref": "Ren-500.i",
+		"function": "renyi",
+		"function_opt_arg": "{'n_bin': 500, 'alpha': inf}"
+	},
+	"23":{
+		"ref": "centroid",
+		"function": "u_mean",
+		"function_opt_arg": "{}"
+	},
+	"24":{
+		"ref": "RMS",
+		"function": "RMS_u",
+		"function_opt_arg": "{}"
+	},
+	"25":{
+		"ref": "STD",
+		"function": "std_u",
+		"function_opt_arg": "{}"
+	},
+	"26":{
+		"ref": "len",
+		"function": "n_points",
+		"function_opt_arg": "{}"
+	},
+	"27":{
+		"ref": "E",
+		"function": "energy",
+		"function_opt_arg": "{}"
+	},
+	"28":{
+		"ref": "minSig",
+		"function": "minimum_signal",
+		"function_opt_arg": "{}"
+	},
+	"29":{
+		"ref": "maxSig",
+		"function": "maximum_signal",
+		"function_opt_arg": "{}"
+	},
+	"30":{
+		"ref": "muSig",
+		"function": "mean_signal",
+		"function_opt_arg": "{}"
+	},
+	"02":{
+		"ref": "M-mu",
+		"function": "max_sur_mean",
+		"function_opt_arg": "{}"
+	},
+	"31":{
+		"ref": "m-mu",
+		"function": "min_sur_mean",
+		"function_opt_arg": "{}"
+	},
+	"32":{
+		"ref": "u-min",
+		"function": "where_min",
+		"function_opt_arg": "{}"
+	},
+	"33":{
+		"ref": "u-max",
+		"function": "where_max",
+		"function_opt_arg": "{}"
+	}
+}

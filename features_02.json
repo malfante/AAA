@@ -1,0 +1,7 @@
+{
+	"01":{
+		"ref": "mfcc",
+		"function": "mfcc_vector",
+		"function_opt_arg": "{'n_coeff':26, 'appendEnergy':'False', 'window_length':0.5 }"
+	}
+}
