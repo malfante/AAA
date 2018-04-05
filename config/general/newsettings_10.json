@@ -1,6 +1,6 @@
 {
 	"general":{
-		"project_root":"/Users/malfantm/Documents/Python/V62_continuous_processing_user_friendly/",
+		"project_root":"/Users/AAA/",
 		"analysis_type":"continuous",
 		"path_to_specific_settings_file":"config/specific/usecase1_continuous_classification/usecase1_01.json",
 		"path_to_res":"res/",
