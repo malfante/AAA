@@ -6,7 +6,7 @@ This Automatic analysis scheme should be credited as follow:
 **Automatic Analysis Architecture**  
 **Marielle MALFANTE,**  
 **Univ. Grenoble Alpes, CNRS, Grenoble INP, GIPSA-lab, 38000 Grenoble, France**  
-**Copyright: GIPSA-Lab**  
+**Copyright: Marielle MALFANTE, GIPSA-Lab**  
 
 
 
