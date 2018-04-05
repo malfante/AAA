@@ -1,0 +1,45 @@
+{
+	"general":{
+		# Path to folder containing all you project (including folder 'automatic_processing'). All path related to the project are based from the project_root. 
+		"project_root":"/Users/malfantm/Documents/Python/V6_continuous_processing_user_friendly/",
+		# analysis_type describe the wanted analysis. At the moment, 3 types are supported : continuous, sparse_offline or sparse_realtime. This parameters is used to get to settings specific to an analysis type.  
+		"analysis_type":"continuous" or "sparse_offline" or "sparse_realtime",
+		# Each analysis requiers specific parameters, which are indicated in a given configuration file. Settings of the main configuration file (present file) are needed for any analysis.
+		"path_to_specific_settings_file":"config/specific/usecase1_continuous_classification_00.json",
+		# Path where results are saved
+		"path_to_res":"res/",
+		# Path where visuals and figures are saved
+		"path_to_visuals":"fig/",
+		# Path where results to review are saved (if needed, but this step is clearly optional) 
+		"path_to_res_to_review":"res_to_review/",
+	},
+	
+	"application":{
+		# Name of the application. Several configuration files can have the same application name. It is simply used to organize the various results if you are working on various types of data. To simplify, new application (and new name) if you need to change the data reading function. 
+		"name": "fish",
+	},
+	
+	"preprocessing":{
+		# Set to True if observations should be normalized in energy. 
+		"energy_norm":"True"
+	},
+	
+	"learning":{
+		# Learning algorithm, see scikit learn models
+		"algo":"svm.SVC(C=512, kernel='rbf', gamma=2**-7, class_weight=None, probability=True)",
+		# Cross validation procedure
+		"cv":"StratifiedShuffleSplit(n_splits=10, train_size=0.7, test_size=0.3)",
+		# Path to the catalogue of labeled data. /!\ catalogue is a pandas.dataframe object and should respect the format described in README file. If usecase2, set to None. 
+		"path_to_catalogue":"/data/shaped/raw04_main_classes_catalogue.pd"		
+	},
+	
+	"features":{
+		# Path to file with feature functions. See example file. 
+		"path_to_config":"config/features/features_01.json",		
+		# All features can be computed from several domains, to chose between time, spectral and cepstral. All domains recommended ("time spectral cepstral").
+		"computation_domains":"time spectral cepstral",
+		# Should output probabilities be thresholded ? 
+		"thresholding":"Ture",
+		# If so, threshold values
+		"thresholds":"[0.8, 0.8, 0.8, 0.8, 0.8]"
+	}
