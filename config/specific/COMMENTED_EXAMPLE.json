@@ -1,0 +1,17 @@
+{
+	"data_to_analyze":{
+		# Defined from where the code is run (project_root + automatic_processing
+		# Numpy.array format. 
+		"path_to_learning_data":"../FISH/data/allData_learning",
+		"path_to_learning_labels":"../FISH/data/allLabels_learning",
+		"path_to_testing_data":"../FISH/data/allData_testing", 
+		"path_to_testing_labels":"../FISH/data/allLabels_testing"
+	},
+	
+	# To keep in all files : data_to_analyze and analysis
+	"analysis":"None", 
+	
+	"display":"None"
+
+	
+}
