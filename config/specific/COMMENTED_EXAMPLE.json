@@ -1,0 +1,46 @@
+{	"data_to_analyze":{
+		# Path to a folder containing all the files to analyze. This path is absolute (not from project path)
+		"path_to_data":"/Users/malfantm/Documents/fish_data_test/test19_refherbier20m/",
+		# Type of files to look for in the folder to analyze
+		"data_files":"*.wav",
+		# Name of the function needed to read the data files. /!\ THIS FUNCTION DEPENDS ON YOUR DATA ! You need to write this function when dealing with new data. Please refer to DataReadingFunctions.py for more information. The function signature must be respected. 
+		"reading_function":"read_fish",
+		# Useful arguments to go from a recording file to the signal waveform. Depends on the application and the reading_function. 
+		"reading_arguments":{
+			"channel":"A"
+		}
+	},
+
+	"analysis":{
+		# Number of analysis windows. So far, only one is supporter
+		"n_window":1,
+		# Window length, in seconds
+		 "window_length":"0.5",
+		# Number of samples between 2 consecutive windows, in number of samples. (overlap)
+		 "delta":5208,
+		 "bandwidth":{"f_min":[50, 500],
+		 					  "f_max":[450, 900]},
+		 "butter_order":5,
+	}, 
+	
+	# Needed displaying information (for spectrogram)
+	"display":{	
+		"display_for_checking":"False",
+		"spectro_window_size":228,
+		"window_type":"kaiser",
+		"decimate_factor":4,
+		"nperseg":"spectro_window_size",
+		"noverlap":"0.9*spectro_window_size", 
+		"nfft":"1.5*spectro_window_size",
+		"scaling":"density",
+		"dB":"True"			
+	}
+}
+
+
+
+
+
+
+
+	
