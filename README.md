@@ -45,7 +45,7 @@ To install the correct version of python, along with the library, you can use mi
 1- Download and install miniconda: `https://conda.io/miniconda.html` 
 NB: By installing miniconda, your `.bachrc` will be modified with the following line : 
 
-> 	# added by Anaconda3 4.3.0 installer  
+> 	added by Anaconda3 4.3.0 installer  
 >	export PATH="/home/user/anaconda3/bin:$PATH"
 
 We suggest you replace them by 
