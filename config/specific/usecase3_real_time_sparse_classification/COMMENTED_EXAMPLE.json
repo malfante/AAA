@@ -3,13 +3,6 @@
 		"reading_function":"request_merapi",
 		# Useful arguments to go from a recording file to the signal waveform. Depends on the application and the reading_function. 
 		"reading_arguments":{
-			"user":"test",
-			"host":"192.168.2.155", 
-			"port":18001,
-			"network":"VG", 
-			"station":"MEPUS", 
-			"location":"00", 
-			"channel":"EHZ"
 		}
 	},
 
