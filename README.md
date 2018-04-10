@@ -10,6 +10,7 @@ If used, the software should be credited as follow:
 and the original paper for which the code was developped should be cited:   
 
 **Malfante, M., Dalla Mura, M., Metaxian, J. P., Mars, J. I., Macedo, O., & Inza, A. (2018). Machine Learning for Volcano-Seismic Signals: Challenges and Perspectives. IEEE Signal Processing Magazine, 35(2), 20-30.**  
+
 We thank you for the respect of the authors work.
 
 
