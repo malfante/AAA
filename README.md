@@ -3,8 +3,8 @@
 Welcome to this automatic classification scheme! Please carefully read the following before asking questions :)
 
 If used, the software should be credited as follow  
-**Automatic Analysis Architecture, M. MALFANTE** 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1216028.svg)](https://doi.org/10.5281/zenodo.1216028). 
+**Automatic Analysis Architecture, M. MALFANTE**   
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1216028.svg)](https://doi.org/10.5281/zenodo.1216028)   
 and the original paper for which the code was developped should be cited:   
 **Malfante, M., Dalla Mura, M., Metaxian, J. P., Mars, J. I., Macedo, O., & Inza, A. (2018). Machine Learning for Volcano-Seismic Signals: Challenges and Perspectives. IEEE Signal Processing Magazine, 35(2), 20-30.**  
 We thank you for the respect of the authors work.
