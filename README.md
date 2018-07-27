@@ -4,7 +4,7 @@ Welcome to this automatic classification scheme! Please carefully read the follo
 
 If used, the software should be credited as follow:    
 
-**Automatic Analysis Architecture, M. MALFANTE**   
+**Automatic Analysis Architecture, M. MALFANTE, J. MARS, M. DALLA MURA**   
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1216028.svg)](https://doi.org/10.5281/zenodo.1216028)   
 
 and the original paper for which the code was developped should be cited:   
