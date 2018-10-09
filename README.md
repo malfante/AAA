@@ -13,6 +13,13 @@ and the original paper for which the code was developped should be cited:  
 
 We thank you for the respect of the authors work.
 
+## [MAJ 9-10-2018]
+Files to run an example of continuous analysis have been added. 
+Run analysis of type 1 (the automatic classification of continuous signals, stored in recording files) with config file newsettings_1EXAMPLE.json. 
+Simply adjust the path in the configuration file to your own machine (general/newsettings_1EXAMPLE.json and specific/usecase1_EXAMPLE.json) and run playground 1. 
+
+NB: The data is over-simplistic, and the labeling is random (catalogue.txt file). Play with it and the other settings to make it work ! :) 
+
 
 ## What is this code for?
 
