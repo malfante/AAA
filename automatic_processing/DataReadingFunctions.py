@@ -34,7 +34,7 @@
 # same conditions as regards security.
 #
 # The fact that you are presently reading this means that you have had
-# knowledge of the CeCILL
+# knowledge of the CeCILL|CeCILL-B|CeCILL-C
 
 import obspy
 import soundfile
@@ -122,6 +122,44 @@ def read_fish(file_path, config, verbatim=0):
     if verbatim > 1:
         print("\t%s read"%file_path)
     return s, fs, t_start, t_end, length_n
+
+
+def read_example(file_path, config, verbatim=0):
+    """ Read example data.
+    /!\ Signature of this function should not be modified and is similar for all applications (i,e, read_XXX)
+    INPUT:
+    - file_path: to file containing data (.dat here)
+    - config: config dictionnary according to project formating
+    - verbatim
+    OUTPUT:
+    - s: numpy array containing the signal read
+    - fs: sampling_rate
+    - t_start and t_end: as datetime.datetime objects
+    - length_n
+    """
+    # Read and check reading
+    if not isfile(file_path):
+        print("No file at",file_path)
+        return None, None
+    s, fs = soundfile.read(file_path)
+    s = s[:,0]
+
+    # Get signals metadata
+    [date,_,time] = file_path.split('/')[-1].split('.')[0].split('_')
+    [y0, m0, d0] = np.array(date.split('-')).astype(int)
+    [h0, min0, s0] = np.array(time.split('-')).astype(int)
+    length_n,=np.shape(s)
+    t_start = datetime.datetime(y0,m0,d0,h0,min0,s0)
+    t_end = t_start + datetime.timedelta(seconds=length_n/fs)
+
+    # verbatim
+    if verbatim > 1:
+        print("\t%s read"%file_path)
+        print(np.shape(s), fs, t_start, t_end, length_n)
+        print()
+    return s, fs, t_start, t_end, length_n
+
+
 
 def request_merapi(config, tStart, duration, verbatim=0):
     """ Request Merapi function.
