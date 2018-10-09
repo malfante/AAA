@@ -1,0 +1,31 @@
+{
+	"general":{
+		"project_root":"/Users/malfantm/Documents/Python/V62_continuous_processing_user_friendly/",
+		"analysis_type":"continuous",
+		"path_to_specific_settings_file":"config/specific/usecase1_continuous_classification/usecase1_EXAMPLE.json",
+		"path_to_res":"res/",
+		"path_to_visuals":"fig/",
+		"path_to_res_to_review":"res_to_review/"
+	},
+	
+	"application":{
+		"name": "example"
+	},
+	
+	"preprocessing":{
+		"energy_norm":"True"
+	},
+	
+	"learning":{
+		"algo":"RandomForestClassifier(n_estimators=200,criterion='entropy',bootstrap=False, class_weight=None)",
+		"cv":"StratifiedShuffleSplit(n_splits=10, train_size=0.7, test_size=0.3)",
+		"path_to_catalogue":"/data/shaped/catalogue.pd"		
+	},
+	
+	"features":{
+		"path_to_config":"config/specific/features/features_01.json",		
+		"computation_domains":"time spectral cepstral",
+		"thresholding":"True",
+		"thresholds":"[0.6, 0.6, 0.6]"
+	}
+}
