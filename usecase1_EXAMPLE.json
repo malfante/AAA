@@ -1,0 +1,39 @@
+{	"data_to_analyze":{
+		"path_to_data":"/Users/malfantm/Documents/Python/V62_continuous_processing_user_friendly/EXAMPLE/data/raw/example_test_data/",
+		"data_files":"*.WAV",
+		"reading_function":"read_example",
+		"reading_arguments":{
+		}
+	},
+
+	"analysis":{
+		"n_window":1,
+		 "window_length":"0.5",
+		 "delta":22000,
+		 "bandwidth":{"f_min":[0],
+		 					  "f_max":[0]},
+		 "butter_order":5,
+		 "spectro_window_size":10417,
+		 "f_max":1500
+	}, 
+	
+	"display":{
+		"display_for_checking":"False",
+		"spectro_window_size":228,
+		"window_type":"kaiser",
+		"decimate_factor":4,
+		"nperseg":"spectro_window_size",
+		"noverlap":"0.9*spectro_window_size", 
+		"nfft":"1.5*spectro_window_size",
+		"scaling":"density",
+		"dB":"True"			
+	}
+}
+
+
+
+
+
+
+
+	
