@@ -104,7 +104,7 @@ class FeatureVector:
             elif domain == 'spectral':
                 signals[i] = np.absolute(np.fft.fft(signal, bestFFTlength(len(signal))))
             elif domain == 'cepstral':
-                signals[i] = np.absolute(np.fft.fft(np.fft.fft(signal, bestFFTlength(len(signal)))))
+                signals[i] = np.absolute(np.fft.fft(np.absolute(np.fft.fft(signal, bestFFTlength(len(signal))))))
             else:
                 print('computation domain should be time, spectral or cepstral')
                 return
